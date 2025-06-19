@@ -1,0 +1,101 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "grades",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "mark1",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "mark2",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "mark3",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "student_wallet",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract/student.sol": "StudentInfo"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract/student.sol": {
+			"keccak256": "0xc087342cc2ebf6194efabec9d0cfda6b488dfe6785dc260227d87f35a00fedcc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://788ce2b66836051a28237a6b001d2245f492fbd506260913d7641ea5d05339e4",
+				"dweb:/ipfs/QmZ6eYnxNdZz6WdvEc5e1q6PL9JL4k4cZhbDnYEqeX9qtA"
+			]
+		}
+	},
+	"version": 1
+}
