@@ -6,13 +6,74 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "studentId",
+						"type": "int256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint32",
+						"name": "mark1",
+						"type": "uint32"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint32",
+						"name": "mark2",
+						"type": "uint32"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint32",
+						"name": "mark3",
+						"type": "uint32"
+					}
+				],
+				"name": "GradeUpdated",
+				"type": "event"
+			},
+			{
 				"inputs": [],
-				"name": "balance",
+				"name": "AddFunds",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_studentId",
+						"type": "int256"
+					}
+				],
+				"name": "GetStudentGrade",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"components": [
+							{
+								"internalType": "uint32",
+								"name": "mark1",
+								"type": "uint32"
+							},
+							{
+								"internalType": "uint32",
+								"name": "mark2",
+								"type": "uint32"
+							},
+							{
+								"internalType": "uint32",
+								"name": "mark3",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct Grade",
 						"name": "",
-						"type": "uint256"
+						"type": "tuple"
 					}
 				],
 				"stateMutability": "view",
@@ -20,22 +81,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "grades",
+				"name": "GetStudentId",
 				"outputs": [
 					{
-						"internalType": "uint32",
-						"name": "mark1",
-						"type": "uint32"
-					},
-					{
-						"internalType": "uint32",
-						"name": "mark2",
-						"type": "uint32"
-					},
-					{
-						"internalType": "uint32",
-						"name": "mark3",
-						"type": "uint32"
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
 					}
 				],
 				"stateMutability": "view",
@@ -44,12 +95,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"internalType": "int256",
+						"name": "_studentId",
+						"type": "int256"
 					}
 				],
-				"name": "student_wallet",
+				"name": "GetStudentWallet",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -58,6 +109,80 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_studentId",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint32[3]",
+						"name": "_grades",
+						"type": "uint32[3]"
+					}
+				],
+				"name": "SetStudentGrade",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_id",
+						"type": "int256"
+					}
+				],
+				"name": "SetStudentId",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum StudentType",
+						"name": "_type",
+						"type": "uint8"
+					}
+				],
+				"name": "SetStudentType",
+				"outputs": [
+					{
+						"internalType": "enum StudentType",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_studentId",
+						"type": "int256"
+					},
+					{
+						"internalType": "address",
+						"name": "_wallet",
+						"type": "address"
+					}
+				],
+				"name": "SetStudentWallet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -74,7 +199,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract/student.sol": "StudentInfo"
+			"Student/contract/StudentInfo.sol": "StudentInfo"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -88,12 +213,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contract/student.sol": {
-			"keccak256": "0xc087342cc2ebf6194efabec9d0cfda6b488dfe6785dc260227d87f35a00fedcc",
+		"Student/contract/StudentInfo.sol": {
+			"keccak256": "0x70e3e91ae42753fcd3dfb33d3f763cf3a314049787f5d3b98c57f7752e3a1bab",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://788ce2b66836051a28237a6b001d2245f492fbd506260913d7641ea5d05339e4",
-				"dweb:/ipfs/QmZ6eYnxNdZz6WdvEc5e1q6PL9JL4k4cZhbDnYEqeX9qtA"
+				"bzz-raw://a6e2a303b6c1a1b19da25fe6a893c598edfebd3973d0969a283e084518c72fa3",
+				"dweb:/ipfs/QmSP4rqRNpcFuu7WCD8kKs1qrSFbeMiXZWRrA731J2253M"
 			]
 		}
 	},

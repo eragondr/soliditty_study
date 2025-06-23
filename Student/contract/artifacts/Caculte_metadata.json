@@ -1,0 +1,152 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "id",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint32[3]",
+						"name": "grades",
+						"type": "uint32[3]"
+					},
+					{
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					},
+					{
+						"internalType": "enum StudentType",
+						"name": "studentType",
+						"type": "uint8"
+					}
+				],
+				"name": "CreateNewStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "ViewStudent",
+				"outputs": [
+					{
+						"internalType": "contract StudentInfo",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "index",
+						"type": "uint16"
+					}
+				],
+				"name": "ViewStudentWallet",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "index",
+						"type": "uint16"
+					}
+				],
+				"name": "ViewStudentWallet2",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ViewStudents",
+				"outputs": [
+					{
+						"internalType": "contract StudentInfo[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Student/contract/Caculate.sol": "Caculte"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Student/contract/Caculate.sol": {
+			"keccak256": "0x6ec006561e86c5e92927620eb804e9acc1db1a8f4110f0583032386ccb146f52",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1f71537f62da3e876c6573eae253357d8fc29e1a5906fd6c6c4facd4ac82f2be",
+				"dweb:/ipfs/QmVAkxCp9RiTxW5at3Z2BimKjXYRZ8MDwVb1PthAcQakyM"
+			]
+		},
+		"Student/contract/StudentInfo.sol": {
+			"keccak256": "0x70e3e91ae42753fcd3dfb33d3f763cf3a314049787f5d3b98c57f7752e3a1bab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a6e2a303b6c1a1b19da25fe6a893c598edfebd3973d0969a283e084518c72fa3",
+				"dweb:/ipfs/QmSP4rqRNpcFuu7WCD8kKs1qrSFbeMiXZWRrA731J2253M"
+			]
+		}
+	},
+	"version": 1
+}
