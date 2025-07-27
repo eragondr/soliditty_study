@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.20+commit.a1b79de6"
 	},
 	"language": "Solidity",
 	"output": {
@@ -207,6 +207,19 @@
 				"inputs": [
 					{
 						"indexed": true,
+						"internalType": "address",
+						"name": "rewardPool",
+						"type": "address"
+					}
+				],
+				"name": "RewardPoolSet",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
 						"internalType": "bytes32",
 						"name": "role",
 						"type": "bytes32"
@@ -375,6 +388,19 @@
 					}
 				],
 				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "treasury",
+						"type": "address"
+					}
+				],
+				"name": "TreasurySet",
 				"type": "event"
 			},
 			{
@@ -670,6 +696,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "rewardPool",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -688,6 +727,32 @@
 					}
 				],
 				"name": "rewardTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_rewardPool",
+						"type": "address"
+					}
+				],
+				"name": "setRewardPool",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_treasury",
+						"type": "address"
+					}
+				],
+				"name": "setTreasury",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -819,6 +884,19 @@
 				"name": "transferOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "treasury",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -999,7 +1077,7 @@
 		"compilationTarget": {
 			"Lockness/contract/LNT.sol": "LNT"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -1108,11 +1186,11 @@
 			]
 		},
 		"Lockness/contract/LNT.sol": {
-			"keccak256": "0x7ca7ad0a1c5e7b83a682428d4626f254d78cc995d3678787e9835ecb24bec8ad",
+			"keccak256": "0x017dbae5e1a405ae3f1ba574c66212e6ec377452dfc3b876defb8e67cd1d1947",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3245994df3863b0c9e27226a621178cb8ad33d54a628b2d0082226d2f7e9a5b5",
-				"dweb:/ipfs/QmQxUYz2c4BMBaTc2z1Uwm2bcGVbSr6hPSHRLHZbzpaMna"
+				"bzz-raw://e8fada27ea430af5aa3378887750f796f97155d5b9efea3e17b74bf94c6ffca6",
+				"dweb:/ipfs/QmPgbaMdAHd2nmZ21YQqpjoo3AT4AybRnwTc6PoFfUMXCX"
 			]
 		}
 	},
