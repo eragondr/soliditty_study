@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.30;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
@@ -46,7 +46,8 @@ contract Shop is Ownable, ReentrancyGuard {
     event ItemAdded(uint256 indexed itemId, string name, ItemType itemType);
     event ItemUpdated(uint256 indexed itemId);
     event ItemDeactivated(uint256 indexed itemId);
-
+    event ItemActivated(uint256 indexed itemId);
+   
     event Purchased(
         address indexed buyer,
         uint256 indexed itemId,
@@ -115,7 +116,7 @@ contract Shop is Ownable, ReentrancyGuard {
     }
 
     // =====================================================
-    // Owner: Deactivate Item
+    // Owner: Deactivate/Activate Item
     // =====================================================
     function deactivateItem(uint256 itemId) external onlyOwner {
         Item storage it = items[itemId];
@@ -124,7 +125,12 @@ contract Shop is Ownable, ReentrancyGuard {
         it.active = false;
         emit ItemDeactivated(itemId);
     }
-
+    function activateItem(uint256 itemId) external onlyOwner {
+        Item storage it = items[itemId];
+        require(it.id != 0, "no-item");
+        it.active = true;
+        emit ItemActivated(itemId);
+    }
     // =====================================================
     // BUY FUNCTION
     // =====================================================
