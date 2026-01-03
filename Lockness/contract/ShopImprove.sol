@@ -109,6 +109,36 @@ contract ShopOptimized is Ownable, ReentrancyGuard {
         return itemId;
     }
 
+    function addBatchItems(
+        string[] calldata names,
+        uint256[] calldata prices,
+        uint88[] calldata quantities
+    ) external onlyOwner {
+        require(names.length == prices.length, "Array length mismatch");
+        require(prices.length == quantities.length, "Array length mismatch");
+
+        for (uint256 i = 0; i < names.length; i++) {
+            // Logic identical to addItemNative, but inside a loop
+            if (prices[i] == 0) revert PriceZero();
+
+            uint256 itemId = nextItemId;
+            unchecked { nextItemId++; }
+
+            items[itemId] = Item({
+                price: prices[i],
+                nftTokenId: 0,
+                paymentToken: address(0), // Native Token
+                quantity: quantities[i],
+                itemType: ItemType.OffChain, // 0
+                nftContract: address(0),
+                active: true,
+                name: names[i]
+            });
+
+            emit ItemAdded(itemId, names[i], ItemType.OffChain);
+        }
+    }
+
     // =====================================================
     // Owner: Update Item
     // =====================================================
