@@ -183,7 +183,7 @@ contract ShopOptimized is Ownable, ReentrancyGuard {
         payable
         nonReentrant
     {
-        if (quantity == 0) revert InvalidQuantity();
+        if (quantity < 1) revert InvalidQuantity();
 
         // Gas: Load storage struct reference once
         Item storage it = items[itemId];
@@ -201,9 +201,9 @@ contract ShopOptimized is Ownable, ReentrancyGuard {
         // 1. Validation & Stock Checks
         // ===============================
         if (itemType == ItemType.OffChain || itemType == ItemType.ERC20Redeemable) {
-             if (it.quantity < quantity) revert InsufficientStock();
+             if (it.quantity < 1) revert InsufficientStock();
              // Effects: Deduct stock BEFORE external calls (CEI Pattern)
-             it.quantity -= quantity;
+           
         } else {
             // For NFTs, strictly require 1
             if (quantity != 1) revert QtyOneRequiredForNFT();

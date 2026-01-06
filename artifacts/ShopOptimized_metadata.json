@@ -638,11 +638,11 @@
 			]
 		},
 		"Lockness/contract/ShopImprove.sol": {
-			"keccak256": "0x14d75f1dd5b818cec6cbcce2b20eb074e1c31d9c1b355771171c9ce7fe72ca43",
+			"keccak256": "0xcf57c65cfdd061a71a18a796cfe61fceb38dbe578761d2966d0e726c55c203d8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://58d5f7f0966a8963b6e388201d2efca24e74c1f1e9487559cfc529089df24137",
-				"dweb:/ipfs/QmYgAhD41qZEUL1ZKwpuKj1if1rqaDuhChta9dATrjQmGC"
+				"bzz-raw://fe7876776ffa6fd4ec5328528e5f4d153b0170bc1e47576c072d6b5ccec50ec5",
+				"dweb:/ipfs/QmeTsDxpBCi7pYEdGkrHeZJJggoq4arzD3BSVoyFsSL2Fe"
 			]
 		}
 	},
