@@ -545,13 +545,13 @@
 		"compilationTarget": {
 			"Lockness/contract/ShopImprove.sol": "ShopOptimized"
 		},
-		"evmVersion": "osaka",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
