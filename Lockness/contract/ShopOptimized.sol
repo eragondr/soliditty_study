@@ -77,8 +77,8 @@ contract ShopOptimized is Ownable, ReentrancyGuard, EIP712 {
     );
     event SignerUpdated(address newSigner);
 
-    constructor(address initialOwner, address _permit2) Ownable(initialOwner) EIP712("Shop", "1") {
-        permit2 = IPermit2(_permit2); // Deploy Permit2 separately and pass address here
+    constructor(address initialOwner) Ownable(initialOwner) EIP712("Shop", "1") {
+        permit2 = IPermit2(0xE1f9845683E24Cfd8c7b651d209361B3691c0e0a); // Deploy Permit2 separately and pass address here
     }
 
     // =====================================================

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.33+commit.64118f21"
 	},
 	"language": "Solidity",
 	"output": {
@@ -34,7 +34,7 @@
 		"compilationTarget": {
 			"Lockness/contract/ShopImprove_flattened.sol": "ReentrancyGuard"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "osaka",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -43,14 +43,15 @@
 			"enabled": true,
 			"runs": 200
 		},
-		"remappings": []
+		"remappings": [],
+		"viaIR": true
 	},
 	"sources": {
 		"Lockness/contract/ShopImprove_flattened.sol": {
-			"keccak256": "0x0178d4256c082c36c82bd999cbd5f931f4116c3aab35229d940c7e8d5cbb02e2",
+			"keccak256": "0xaa805548bc6e585b5ae54edb453e4787cbe3ef5f521e9889e4ce6eea65e3197e",
 			"urls": [
-				"bzz-raw://8e461485fc2e6367c2fc8554f310099c806adf49f1dfd5f95aa67eca429bbacd",
-				"dweb:/ipfs/QmXcApYwYnsLYdEeybkhuDowtnybp7ADyv1sA1vuqwHtsh"
+				"bzz-raw://3f579d8e7ad0e14784b847db915449c34f999fcde8441a5f27629d5d4ea0e771",
+				"dweb:/ipfs/Qmf9cCQtDwbUwUh3bzDCJMXXBpAkDU8YYC46ns2VeSGaZL"
 			]
 		}
 	},
