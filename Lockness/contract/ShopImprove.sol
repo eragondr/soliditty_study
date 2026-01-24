@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.30;
+pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
@@ -216,7 +216,8 @@ contract ShopOptimized is Ownable, ReentrancyGuard {
         // ===============================
         if (paymentToken == address(0)) {
             if (msg.value != totalPrice) revert WrongNativeAmount();
-        } else {
+        } 
+        else {
             // Security: Use SafeERC20 for tokens like USDT that don't return bool
             IERC20(paymentToken).safeTransferFrom(msg.sender, address(this), totalPrice);
         }

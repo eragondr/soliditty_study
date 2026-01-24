@@ -38,11 +38,5 @@
 		"gasEstimates": null,
 		"methodIdentifiers": {}
 	},
-	"abi": [
-		{
-			"inputs": [],
-			"name": "ReentrancyGuardReentrantCall",
-			"type": "error"
-		}
-	]
+	"abi": []
 }

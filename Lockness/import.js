@@ -5,7 +5,7 @@
         // ==========================================
         // 1. CONFIGURATION
         // ==========================================
-        const CONTRACT_ADDRESS = "0xdbb716eb769df16c224ab094e509b8f980a317ab"; // <--- PASTE NEW ADDRESS
+        const CONTRACT_ADDRESS = "0x08fb23f51d06245f091477d936e03c3ffddbc563"; // <--- PASTE NEW ADDRESS
 
         // const items = [
         //             { name: "gc_ticket_spin_1", price: "0.99", quantity: 1 },

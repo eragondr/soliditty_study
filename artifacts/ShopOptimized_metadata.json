@@ -563,9 +563,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Lockness/contract/ShopOptimized.sol": "ShopOptimized"
+			"Lockness/contract/ShopPermit.sol": "ShopOptimized"
 		},
-		"evmVersion": "osaka",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -574,8 +574,7 @@
 			"enabled": true,
 			"runs": 200
 		},
-		"remappings": [],
-		"viaIR": true
+		"remappings": []
 	},
 	"sources": {
 		"@openzeppelin/contracts/access/Ownable.sol": {
@@ -738,12 +737,12 @@
 				"dweb:/ipfs/QmVUSvooZKEdEdap619tcJjTLcAuH6QBdZqAzWwnAXZAWJ"
 			]
 		},
-		"Lockness/contract/ShopOptimized.sol": {
-			"keccak256": "0xbe34cd6ea416fd8bc7fe75c464f3b523a06a2a2dc27089c9ce079ec94ac15740",
+		"Lockness/contract/ShopPermit.sol": {
+			"keccak256": "0x3a8d27ea1632bb40d990aaabb778e652f39eb4aaab860927fa240e7e035680f0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4d999fbfbeba22f29d888d25b4c04195e6b552ca2cf47b10f443dfe296162459",
-				"dweb:/ipfs/QmZ5wCSL1UqfnrxLY5PKwPVvLQ9ri1WnsvQm6CwcMVNfe2"
+				"bzz-raw://ae88390024c34971d9bada6c73b984e993db646a662c7d6387cee8064b316240",
+				"dweb:/ipfs/QmWZXnBr6KhWijLZbyx4WoPgSVdVRrvvq6ikVyuXqbfH4q"
 			]
 		}
 	},

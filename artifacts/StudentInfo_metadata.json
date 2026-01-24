@@ -1,0 +1,227 @@
+{
+	"compiler": {
+		"version": "0.8.33+commit.64118f21"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "studentId",
+						"type": "int256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint32",
+						"name": "mark1",
+						"type": "uint32"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint32",
+						"name": "mark2",
+						"type": "uint32"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint32",
+						"name": "mark3",
+						"type": "uint32"
+					}
+				],
+				"name": "GradeUpdated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "AddFunds",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_studentId",
+						"type": "int256"
+					}
+				],
+				"name": "GetStudentGrade",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint32",
+								"name": "mark1",
+								"type": "uint32"
+							},
+							{
+								"internalType": "uint32",
+								"name": "mark2",
+								"type": "uint32"
+							},
+							{
+								"internalType": "uint32",
+								"name": "mark3",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct Grade",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "GetStudentId",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_studentId",
+						"type": "int256"
+					}
+				],
+				"name": "GetStudentWallet",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_studentId",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint32[3]",
+						"name": "_grades",
+						"type": "uint32[3]"
+					}
+				],
+				"name": "SetStudentGrade",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_id",
+						"type": "int256"
+					}
+				],
+				"name": "SetStudentId",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum StudentType",
+						"name": "_type",
+						"type": "uint8"
+					}
+				],
+				"name": "SetStudentType",
+				"outputs": [
+					{
+						"internalType": "enum StudentType",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_studentId",
+						"type": "int256"
+					},
+					{
+						"internalType": "address",
+						"name": "_wallet",
+						"type": "address"
+					}
+				],
+				"name": "SetStudentWallet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Student/contract/StudentInfo.sol": "StudentInfo"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": [],
+		"viaIR": true
+	},
+	"sources": {
+		"Student/contract/StudentInfo.sol": {
+			"keccak256": "0x70e3e91ae42753fcd3dfb33d3f763cf3a314049787f5d3b98c57f7752e3a1bab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a6e2a303b6c1a1b19da25fe6a893c598edfebd3973d0969a283e084518c72fa3",
+				"dweb:/ipfs/QmSP4rqRNpcFuu7WCD8kKs1qrSFbeMiXZWRrA731J2253M"
+			]
+		}
+	},
+	"version": 1
+}

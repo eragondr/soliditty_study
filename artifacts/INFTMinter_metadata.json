@@ -39,7 +39,7 @@
 		"compilationTarget": {
 			"Lockness/contract/ShopImprove.sol": "INFTMinter"
 		},
-		"evmVersion": "osaka",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -48,8 +48,7 @@
 			"enabled": true,
 			"runs": 200
 		},
-		"remappings": [],
-		"viaIR": true
+		"remappings": []
 	},
 	"sources": {
 		"@openzeppelin/contracts/access/Ownable.sol": {
@@ -133,11 +132,11 @@
 			]
 		},
 		"Lockness/contract/ShopImprove.sol": {
-			"keccak256": "0xcf57c65cfdd061a71a18a796cfe61fceb38dbe578761d2966d0e726c55c203d8",
+			"keccak256": "0x0c049a9042693459f735d5e5627dcde0f304aab00b9982009d65f668ac12639d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fe7876776ffa6fd4ec5328528e5f4d153b0170bc1e47576c072d6b5ccec50ec5",
-				"dweb:/ipfs/QmeTsDxpBCi7pYEdGkrHeZJJggoq4arzD3BSVoyFsSL2Fe"
+				"bzz-raw://e81bddb46e1bbf3559214d04c12f8bad84ec7da84e91d6929c381ac6883247dd",
+				"dweb:/ipfs/QmNTpWDwZYUqWkJDCgmSks7q6kMMfFjrv2b68FMTREvY7F"
 			]
 		}
 	},
